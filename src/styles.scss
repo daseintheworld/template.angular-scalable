@@ -1,0 +1,18 @@
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+header {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/************************** angular materials customization example **************************/
+.material-icons.his_red { color: red; }
+.material-icons.his_green { color: greenyellow; }
+.material-icons.his_white { color: white; }
+
+.mat-toolbar.mat-primary {
+    background: gray;
+    color: #fff;
+}
+/************************** /angular materials customization **************************/

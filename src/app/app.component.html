@@ -1,0 +1,10 @@
+<div fxFlexFill fxLayout="column">
+  <app-gnb fxFlex="1 1 50px"></app-gnb>
+  <div fxFlex="1 1 100%" [@routeAnimation]="getAnimationData(routerOutlet)">
+    <router-outlet #routerOutlet="outlet">
+        <!-- <spinner-component></spinner-component> -->
+    </router-outlet>
+  </div>
+</div>
+
+
