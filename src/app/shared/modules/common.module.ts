@@ -11,11 +11,13 @@ import { A11yModule } from '@angular/cdk/a11y';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import * as m from '@angular/material';
 
-export const modules = [
-    CommonModule,
+export const CommonModules: any[] = [
+      //angular
+      CommonModule,
       FormsModule,
       ReactiveFormsModule,
 
+      
       FlexLayoutModule,
 
       A11yModule,

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { modules as CommonModules } from './modules/common-ui.module';
+import { CommonModules } from './modules/common.module';
 /**
  * title: shared module
- * description: 공통적으로 import 해야할 module를 정의한다.
+ * description: 
  */
 @NgModule({
     declarations: [

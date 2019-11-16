@@ -1,0 +1,19 @@
+.project-background {
+    pointer-events: none;
+    top: 50px;
+    left: 0;
+    height: calc(100% - 50px);
+    width: 100%;
+    position: absolute;
+    background: black;
+    opacity: 0.2;
+    z-index: 100;
+}
+.project-container {
+    top: 50px;
+    left: 0;
+    height: calc(100% - 50px);
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+}

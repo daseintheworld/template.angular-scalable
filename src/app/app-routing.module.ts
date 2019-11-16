@@ -6,13 +6,14 @@ import { AuthorizationGuard } from './authorization.guard';
 const routes: Routes = [
     {
         path: '',
-        // canActivate: [AuthorizationGuard],
+        canActivate: [AuthorizationGuard], 
         runGuardsAndResolvers: 'always',
         children: [
             { path: 'example', loadChildren: () => import('./modules/example/example.module').then(m => m.ExampleModule) },
-            { path: '', redirectTo: '/home', pathMatch: 'full' }
+            { path: '', redirectTo: '/home', pathMatch: 'full' } 
         ],
     },
+    { path: 'home', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) },
     { path: 'login', loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule) },
     { path: '404', component: NotFoundComponent},
     { path: '**', redirectTo: '/404'}
@@ -22,7 +23,7 @@ const routes: Routes = [
 @NgModule({
     declarations: [],
     imports: [
-        RouterModule.forRoot(routes,{ useHash:true, onSameUrlNavigation: 'reload'})//, { useHash:true, onSameUrlNavigation: 'reload'}
+        RouterModule.forRoot(routes,{ onSameUrlNavigation: 'reload'})
     ],
     exports: [
         RouterModule

@@ -13,6 +13,7 @@ export class AuthorizationGuard implements CanActivate {
 
     canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
 
-        return this.sessionService.loggedOn$;
+        return of(true);
+        // return this.sessionService.loggedOn$;
     }
 }

@@ -16,6 +16,8 @@ import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { COMPOSITION_BUFFER_MODE } from '@angular/forms';
 import { CoreModule } from './core/core.module';
+import { HomeModule } from './modules/home/home.module';
+import { LoginModule } from './modules/login/login.module';
 
 export function debug(reducer: ActionReducer<any>): ActionReducer<any> {
     return function(state, action) {

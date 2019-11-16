@@ -1,6 +1,4 @@
 import { NgModule } from '@angular/core';
-import { TreeModule } from 'angular-tree-component';
-
 
 import { NotFoundComponent } from './not-found/not-found.component';
 import { GnbComponent } from './gnb/gnb.component';
@@ -14,8 +12,7 @@ import { SharedModule } from '../shared/shared.module';
     ],
     imports: [
         RouterModule,
-        SharedModule,
-        TreeModule.forRoot()
+        SharedModule
     ],
     exports: [
         GnbComponent

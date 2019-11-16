@@ -1,1 +1,1 @@
-export * from "./common-ui.module";
+export * from "./common.module";

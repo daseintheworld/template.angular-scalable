@@ -1,18 +1,18 @@
 <div class="login" fxLayout="row" fxLayoutAlign="center center">
   <div class="container" fxFlex="250px" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" [formGroup]="formGroup">
 
-    <div class="title">LOGIN</div>
+    <div class="title">Login</div>
 
     <mat-form-field fxFlexFill>
-      <input matInput formControlName="id" placeholder="ID" >
+      <input matInput formControlName="id" placeholder="Id" >
     </mat-form-field>
 
     <mat-form-field fxFlexFill>
-      <input matInput formControlName="pwd" type="password" placeholder="PWD" >
+      <input matInput formControlName="pwd" type="password" placeholder="Password" >
     </mat-form-field>
-    <button mat-fab (click)="login.emit(formGroup.value)" cdkFocusInitial
+    <button mat-fab (click)="login.next(formGroup.value)" cdkFocusInitial
             [disabled]="formGroup.invalid">
-        LOGIN
+        Sign in
     </button>
   </div>
 </div>

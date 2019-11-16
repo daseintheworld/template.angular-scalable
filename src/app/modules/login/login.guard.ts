@@ -13,6 +13,6 @@ export class LoginGuard implements CanActivate {
 
     canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
 
-        return this.sessionService.loggedOn$;
+        return of(true);
     }
 }

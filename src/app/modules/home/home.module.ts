@@ -15,16 +15,16 @@ import * as pg from './pages';
 // import * as s from './services/entities';
 import { reducer } from './store/reducers';
 import { effects } from './store/effects';
-import { ExampleRoutingModule } from './example-routing.module';
+import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
     declarations: [
         pg.HomeComponent
     ],
     imports: [
-        ExampleRoutingModule,
+        HomeRoutingModule,
         SharedModule,
-        StoreModule.forFeature('example', reducer),
+        StoreModule.forFeature('home', reducer),
         EffectsModule.forFeature(effects)
     ],
     entryComponents:[
@@ -32,5 +32,5 @@ import { ExampleRoutingModule } from './example-routing.module';
     providers: [
     ]
 })
-export class ExampleModule {
+export class HomeModule {
 }
